@@ -1,4 +1,4 @@
-name: first
+]name: first
 
 on: push
 
@@ -11,7 +11,7 @@ jobs:
     - name: Step one
       uses: actions/checkout@v2
     - name: Step two
-      run env | sort
+      run: env | sort
 
   job2:
     name: Second job
@@ -20,4 +20,4 @@ jobs:
     - name: Step one
       uses: actions/checkout@v2
     - name: Step two
-      run "Get-ChildItem Env: | Sort-Object Name"
+      run: "Get-ChildItem Env: | Sort-Object Name"
